@@ -1,0 +1,22 @@
+.glass-card {
+  background: var(--surface);
+  border-radius: 12px;
+  border: 1px solid var(--border-light);
+  padding: 1rem;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.glass-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.glass-card.no-padding {
+  padding: 0;
+}
+
+.glass-card.clickable {
+  cursor: pointer;
+}
