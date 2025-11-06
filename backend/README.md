@@ -1,6 +1,72 @@
-# 🚀 Reddit-Like Serverless Backend
+# 🚀 BuChat Serverless Backend
 
-A complete, production-ready Reddit alternative built with AWS SAM (Serverless Application Model), featuring 75+ API endpoints with AI-powered features, gamification, and unique social features.
+A complete, production-ready Reddit-like social platform backend built with AWS SAM (Serverless Application Model), featuring comprehensive authentication, real-time social features, community management, and advanced user engagement.
+
+## 🎯 Core Features
+
+### Authentication & Security
+- **Email/Password Authentication** - Secure login with bcrypt hashing (10 rounds)
+- **Email Verification** - 6-digit verification codes via AWS SES (24-hour expiry)
+- **Google OAuth Integration** - One-click sign-in with auto-account creation
+- **JWT Tokens** - Secure session management (7-day expiry)
+- **Password Reset Flow** - Forgot password with reset codes (1-hour expiry)
+- **CORS Support** - Proper headers for cross-origin requests
+
+### Posts & Content
+- **Create/Edit/Delete Posts** - Full CRUD operations
+- **Rich Content Support** - Text, links, images with community tagging
+- **Upvote/Downvote System** - Reddit-style voting mechanism
+- **Save Posts** - Bookmark posts for later viewing
+- **Post Sorting** - Hot, new, top, controversial algorithms
+- **Search Posts** - Full-text search by title and content
+- **Trending Posts** - Time-based trending with configurable timeframes
+
+### Communities
+- **Create Communities** - User-generated communities with descriptions
+- **Join/Leave Communities** - Membership management
+- **Community Discovery** - Recommended communities based on interests
+- **Community Posts Feed** - Filtered post listings per community
+- **Search Communities** - Find communities by name and description
+
+### Comments & Discussions
+- **Nested Comments** - Threaded comment system with unlimited depth
+- **Comment Voting** - Upvote/downvote on comments
+- **Edit/Delete Comments** - Full comment management
+- **Comment Sorting** - Best, new, top, controversial
+
+### Social Features
+- **Follow/Unfollow Users** - Build social connections
+- **Direct Messaging** - Private conversations between users
+- **User Profiles** - Customizable profiles with bio, avatar, banner
+- **Activity Feed** - Personalized feed based on follows and interests
+- **User Search** - Find users by username
+
+### Notifications
+- **Real-time Notifications** - Instant updates for interactions
+- **Notification Types** - Upvotes, comments, follows, mentions, awards
+- **Read/Unread Status** - Track notification states
+- **Notification Filters** - Filter by type and status
+
+### Gamification & Engagement
+- **Karma System** - Points for upvotes and contributions
+- **User Levels** - XP-based progression system
+- **Achievement Badges** - Unlock badges for milestones
+- **Leaderboards** - Top users by karma (All Time/Month/Week)
+- **Streak Tracking** - Daily activity streaks
+
+### Moderation
+- **Report System** - Report posts and comments
+- **Content Removal** - Moderator tools to remove content
+- **User Bans** - Community-level user bans
+- **Moderator Roles** - Assign moderators to communities
+- **Pending Reports Dashboard** - Review and manage reports
+
+### Advanced Features
+- **Cross-posting** - Share posts across communities
+- **External Sharing** - Share to social platforms
+- **Auto-tagging** - AI-powered content categorization
+- **Sentiment Analysis** - Analyze post/comment sentiment
+- **Content Moderation** - Automated toxicity detection
 
 ## 🌐 Deployed API
 
@@ -8,7 +74,7 @@ A complete, production-ready Reddit alternative built with AWS SAM (Serverless A
 
 **Region:** ap-south-1 (Mumbai)
 
-**Stack Name:** reddit-backend
+**Stack Name:** buchat-backend
 
 ---
 
